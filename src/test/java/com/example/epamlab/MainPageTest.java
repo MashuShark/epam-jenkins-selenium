@@ -18,7 +18,8 @@ public class MainPageTest {
     @BeforeClass
     public static void setUpAll() {
         Configuration.startMaximized = true;
-        Configuration.browser="edge";
+        Configuration.browser = "edge";
+        Configuration.screenshots = true;
         SelenideLogger.addListener("allure", new AllureSelenide());
     }
 
