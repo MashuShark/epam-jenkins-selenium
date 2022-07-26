@@ -9,7 +9,8 @@ build/**
 *.iml
 .idea
 .allure-results
-
+allure-results
+allure-results/**
 # Log file
 *.log
 
