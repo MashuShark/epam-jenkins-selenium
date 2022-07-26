@@ -28,6 +28,7 @@ public class MainPageTest {
         open("https://www.jetbrains.com/");
     }
 
+    @Ignore
     @Test
     public void search() {
         mainPage.searchButton.click();
@@ -37,7 +38,7 @@ public class MainPageTest {
 
         $("input[data-test='search-input']").shouldHave(attribute("value", "Selenium"));
     }
-
+    @Ignore
     @Test
     public void toolsMenu() {
         mainPage.toolsMenu.hover();
@@ -45,6 +46,7 @@ public class MainPageTest {
         $("div[data-test='menu-main-popup-content']").shouldBe(visible);
     }
 
+    @Ignore
     @Test
     public void navigationToAllTools() {
         mainPage.seeAllToolsButton.click();
