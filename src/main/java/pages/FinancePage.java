@@ -1,13 +1,14 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
+import org.openqa.selenium.WebDriver;
 
 import java.util.List;
 
 import static com.codeborne.selenide.Selenide.$$x;
 import static com.codeborne.selenide.Selenide.$x;
 
-public class FinancePage extends BasePage {
+public class FinancePage {
 
     public SelenideElement interbankButton = $x("//span[contains(text(),'Міжбанк')]");
     public SelenideElement cashButton = $x("//span[contains(text(),'Гот')]");
@@ -18,6 +19,4 @@ public class FinancePage extends BasePage {
 
     public List<SelenideElement> cashUSD =
             $$x("//a[@data-gtm-ea='cash-$-button']//span[@class='fua-xrates__value']");
-
-
 }
